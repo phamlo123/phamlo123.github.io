@@ -10,14 +10,12 @@ export const About = () => {
 justifyContent="center">
 <Stack>
     <Stack direction="column" spacing={2} sx={{ padding: "40px" }}>
-        <Typography variant="subtitle1">Thank you for visiting my page. My name is</Typography>
-        <Typography variant="heroName">Long (Terence) Pham</Typography>
+        <Typography variant="h2">Thank you for visiting my page. My name is</Typography>
+        <Typography >Long (Terence) Pham</Typography>
         <Typography>I am a fullstack software developer. My goal is to foster the application of technology to improve productivity and living standard of people around the world. 
             During my time at Northeastern University as a Computer Science major, I have taken courses in Object Oriented Design, Database, Computer Systems, Networks, Distributed System, Artificial Intelligence, and more.
         </Typography>
-        <Typography sx={{ width: "70%", minWidth: "320px", height: "auto" }} variant="subtitle2">
-             
-            
+        <Typography>
             I am excited to discuss any employment opportunities.
         </Typography>
     </Stack>
