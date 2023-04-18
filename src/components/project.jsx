@@ -9,7 +9,9 @@ import { CardActionArea, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import playlist from "../assets/playlist.png";
-
+import tennis from "../assets/tennis.gif";
+import vixx from "../assets/vixx.png";
+import raft from "../assets/raft.png";
 
 const PROJECTS = [
     {
@@ -22,49 +24,49 @@ const PROJECTS = [
     {
         id: 2,
         title: "Atari Tennis AI agent",
-        content: "as",
-        image: "img",
-        link: ""
+        content: "A reinforment learning agent that plays the Atari tennis game using the Arcade Learning Environment provided by OpenAI Gym. Approximate Q-learning is applied to train our agent through a large number of round iterations. Ultimately achieved a win-rate of 5% against principle agent and an average of 3 ball hits per game.",
+        image: tennis,
+        link: "https://github.com/phamlo123/tennis"
     },
     {
         id: 4,
         title: "VIX predictor",
-        content: "as",
-        image: "img",
+        content: "The paper proposes a new way to estimate realized variance by combining the advantage the VIX provides and Machine learning model derived from historical option data. It includes new algorithm for selecting options for each trading day to be included in the calculation of synthetic VIX, as well as features for the ML model. Specifically, 30 realized variance is calculated for every trading day from 1996 to 2020 (using SPX spot price) and this will serve as lablels for our model. Each trading day is an observation in our model. And finally, the selected options for each trading day will be aggregated and standardized to be used as features in our model",
+        image: vixx,
         link: "https://github.com/phamlo123/VIXModel"
+    },
+    {
+        id: 5,
+        title: "Foundher - Job Application Site",
+        content: "A job application website tailored for employment-seeking women in India. The website focuses on applicants' needs and compatability with their prospective workplaces, and matches jobs based on similarity score calculated with TFIDF (Natural Language Processing).",
+        image: "img",
+        link: ""
     },
     {
         id: 3,
         title: "Co-oping",
-        content: "as",
+        content: "A web application for Northeastern students to annonymously review their co-op experiences, and interacting with each other through topic postings.",
         image: "img",
         link: "https://github.com/phamlo123/coping_backend"
     },
     {
         id: 5,
         title: "Concensus Distributed System with Raft Algorithm",
-        content: "as",
-        image: "img",
+        content: "A distributed key-value store utilizing Raft Algorithm",
+        image: raft,
         link: "https://github.com/phamlo123/CS3700/tree/master/p6"
     },
-    {
-        id: 5,
-        title: "Foundher - Job Application Site",
-        content: "as",
-        image: "img",
-        link: ""
-    }
+
 
 ]
 const Item = styled(Box)(({ theme }) => ({
     textAlign: 'center',
 }));
 
-export const Project = () => {
-    const status = 1;
+const Project = () => {
 
     return(
-        <Box>
+        <Box id="Project">
             <Box sx={{ display: 'flex', alignItems: 'center', height: "90%", width: "100%" }}
                 justifyContent="center">
                 <Stack direction="column" width="100%">
@@ -87,14 +89,14 @@ export const Project = () => {
                                         <Card sx={{ height: "100%", minWidth: "300px" }}>
                                             <CardMedia
                                                 component="img"
-                                                height="250"
+                                                height="350"
                                                 image={item.image}
                                             />
                                             <CardContent>
                                                 <Typography gutterBottom variant="h6" component="div">
                                                     {item.title}
                                                 </Typography>
-                                                <Typography variant="subtitle2" sx={{ height: "100%" }} color="text.secondary">
+                                                <Typography variant="subtitle2" sx={{ height: "70%" }} color="text.secondary">
                                                     {item.content}
                                                 </Typography>
                                             </CardContent>
@@ -109,3 +111,5 @@ export const Project = () => {
         </Box>
     );
 }
+
+export default Project;

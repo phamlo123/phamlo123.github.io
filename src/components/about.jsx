@@ -6,13 +6,13 @@ import Typography from "@mui/material/Typography";
 import me from "../assets/me.jpeg";
 
 
-export const About = () => {
+const About = () => {
     return(
 <Box sx={{ display: 'flex', alignItems: 'center', minHeight: "100vh", width: "80%", margin: "auto" }}
-    justifyContent="center">
+    justifyContent="center" id="About">
 <Stack>
     <Stack direction="column" spacing={2} sx={{ padding: "40px" }}>
-        <Typography variant="h2">Thank you for visiting my page. My name is</Typography>
+        <Typography variant="h4">Thank you for visiting my page. My name is</Typography>
         <Typography >Long (Terence) Pham</Typography>
         <Typography>I am a fullstack software developer. My goal is to foster the application of technology to improve productivity and living standard of people around the world. 
             During my time at Northeastern University as a Computer Science major, I have taken courses in Object Oriented Design, Database, Computer Systems, Networks, Distributed System, Artificial Intelligence, and more.
@@ -26,9 +26,9 @@ export const About = () => {
             component="img"
             src={me}
             sx={{
-                maxWidth: "320px",
-                width: "300px",
-                height: "300px",
+                maxWidth: "350px",
+                width: "350px",
+                height: "350px",
                 objectFit: "cover",
                 borderRadius: "50%",
             }}
@@ -39,3 +39,4 @@ export const About = () => {
 </Box>
     )
 }
+export default About;
