@@ -75,8 +75,7 @@ const Project = () => {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <Item><Typography variant="h5" color="#A9A9A9"> </Typography></Item>
-                        <Item><Typography variant="h5"> Apps I've built </Typography></Item>
+                        <Item><Typography align="left" variant="h5"> Apps I've built </Typography></Item>
                     </Stack>
                     <Divider />
                     <Box sx={{ width: "100%", paddingTop: "5vh", paddingBottom: "5vh", minWidth: "320px" }}>
