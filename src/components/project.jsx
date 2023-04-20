@@ -12,7 +12,7 @@ import playlist from "../assets/playlist.png";
 import tennis from "../assets/tennis.gif";
 import vixx from "../assets/vixx.png";
 import raft from "../assets/raft.png";
-
+import foundher from "../assets/foundh.gif";
 const PROJECTS = [
     {
         id: 1,
@@ -39,7 +39,7 @@ const PROJECTS = [
         id: 5,
         title: "Foundher - Job Application Site",
         content: "A job application website tailored for employment-seeking women in India. The website focuses on applicants' needs and compatability with their prospective workplaces, and matches jobs based on similarity score calculated with TFIDF (Natural Language Processing).",
-        image: "img",
+        image: foundher,
         link: ""
     },
     {
